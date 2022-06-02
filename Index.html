@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<script type="text/javascript">
+
+var slideimages = new Array() // create new array to preload images
+slideimages[0] = new Image() // create new instance of image object
+slideimages[0].src = "img/ROB.jpg" // set image src property to image path, preloading image in the process
+slideimages[1] = new Image()
+slideimages[1].src = "img/BOX.jpg"
+slideimages[2] = new Image()
+slideimages[2].src = "img/CL2.jpg"
+slideimages[3] = new Image() // create new instance of image object
+slideimages[3].src = "img/CL3.jpg" // set image src property to image path, preloading image in the process
+slideimages[4] = new Image()
+slideimages[4].src = "img/CL4.jpg"
+slideimages[5] = new Image()
+slideimages[5].src = "img/CL.jpg"
+slideimages[6] = new Image() // create new instance of image object
+slideimages[6].src = "img/ELE.jpg" // set image src property to image path, preloading image in the process
+slideimages[7] = new Image()
+slideimages[7].src = "img/ENT.jpg"
+slideimages[8] = new Image()
+slideimages[8].src = "img/JVA.jpg"
+slideimages[8] = new Image()
+slideimages[8].src = "img/JVA.jpg"
+</script>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Robotics 668</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css"> 
+<!-- 
+html,body { height:100%; }
+
+a{
+	text-decoration:none;
+}
+
+#footer .content p {
+    margin-bottom: 0
+}
+body  {
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+.twoColHybLt #container {
+	width: 100%;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding-bottom: 0px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	font-size: 100%;
+	background-color: #292929;
+	height: 90%;
+} 
+
+/* Tips for sidebar1:
+1. Since we are working in relative units, it's best not to use padding on the sidebar. It will be added to the overall width for standards compliant browsers creating an unknown actual width. 
+2. Since em units are used for the sidebar value, be aware that its width will vary with different default text sizes.
+3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColHybLt #sidebar1 p" rule.
+*/
+.twoColHybLt #sidebar1 {
+	float: left;
+	width: 30%;
+	height: 1354%;
+	color: #333333;
+	background-color: #666666;
+	text-align: center;
+	text-indent: 0px;
+	margin: 0%;
+	padding: 0%;
+}
+.twoColHybLt #sidebar1 h3, .twoColHybLt #sidebar1 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+
+/* Tips for mainContent:
+1. The space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. Be aware it is possible to cause float drop (the dropping of the non-floated mainContent area below the sidebar) if an element wider than it can contain is placed within the mainContent div. WIth a hybrid layout (percentage-based overall width with em-based sidebar), it may not be possible to calculate the exact width available. If the user's text size is larger than average, you will have a wider sidebar div and thus, less room in the mainContent div. You should be aware of this limitation - especially if the client is adding content with Contribute.
+3. In the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This may help avoid several IE-specific bugs.
+*/
+.twoColHybLt #mainContent {
+	width: 70%;
+	margin-top: 0;
+	margin-right: 20px;
+	margin-bottom: 0;
+	margin-left: 40%;
+	font-size: 100%;
+	background-color: #292929;
+	padding: 0%;
+} 
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+img {
+	max-width: 90%;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	width: 110%;
+}
+.style1 {
+	font-size: 300%
+}
+.style3 {font-size: 80% color:#999999
+	color: #666666;
+	color: #CCCCCC;
+	font-size: 400%;
+	font-weight: bold;
+}
+p{
+color:#CCCCCC
+}
+
+.style4 {
+	font-size: 200%;
+	color: #A3A3A3;
+	margin: 0px;
+	padding: 0px;
+}
+.style5 {
+	font-size: 200%;
+	color: #666666;
+	font-weight: bold;
+}
+.style6 {
+	color: #666666;
+	font-size: 200%;
+}
+.style7 {
+	font-size: 250%;
+}
+.style8 {font-size: 200%}
+--> 
+</style>
+</head>
+
+<body class="twoColHybLt">
+<body style=background-image:url(img/bg.jpg)>
+<div id="container">
+<div id="sidebar1">  <a href="Index.html"><img src="img/Sidebar Logo.jpg" width="110%" height="120%"/></a>    
+  <h3 class="style7">Quick Links</h3>
+    <div align="center"><a class="style1">Home</a>    </div>
+<!-- end #sidebar1 --></div>
+<div id="mainContent">
+    <h1 align="center" class="style3"> Robotics 668</h1>
+    <p align="center" class="style4">Welcome To the robotics website for mobile devices.</p>
+    <hr align="center" width="95%"/>
+    <h2 align="center" class="style5">Please click on a quick link to get started </h2>
+    
+</nav> <div class="text">
+                            <div align="center"><img src="img/ROB.jpg" id="slide" class="slideshow" width="auto" height="90%" /><label for="slide"> <span class="style6">Slideshow</span></label>
+                              
+                                  <span class="style8">
+                                  <script type="text/javascript">
+
+    
+                                  </script>
+                                  </span>
+<script type="text/javascript">var step=0
+    
+    function slideit(){
+     //if browser does not support the image object, exit.
+     if (!document.images)
+      return
+     document.getElementById('slide').src = slideimages[step].src
+     if (step<7)
+      step++
+     else
+      step=0
+     //call function "slideit()" every 2.5 seconds
+     setTimeout("slideit()",2500)
+    }
+    
+    slideit()
+
+                                </script>
+                                                      </div>
+    <!-- end #mainContent --></div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+<!-- end #container --></div>
+</body>
+</html>
